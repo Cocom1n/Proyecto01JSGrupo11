@@ -1,16 +1,16 @@
 document.getElementById("calc").onclick = function()
 {
-    let costo = Number(document.getElementById("costo").value);
-    let propinaPorcentaje = Number(document.getElementById("propina").value);
+    let numeroA = Number(document.getElementById("costo").value);
+    let numeroB = Number(document.getElementById("propina").value);
 
-    let propina = propinaPorcentaje/100*costo;
-    let total = costo + propina;
+    let calculo = numeroB/100*numeroA;
+    let total = numeroA + calculo;
 
     console.log("la propina es: "+ calculo); //propina
     console.log("total a pagar: "+ total); //precio total, incluye la propina + costo
 
-    document.getElementById("precioPropina").innerHTML = propina;
-    document.getElementById("precioTotal").innerHTML = total;
+    document.getElementById("precioPropina").innerHTML = `La propina es: $ ${calculo}`;
+    document.getElementById("precioTotal").innerHTML = `Precio total: $ ${total}`;
 
 }
 
