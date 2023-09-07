@@ -1,11 +1,9 @@
-let numeroA;
-let numeroB
-let total;
+document.getElementById("calc").onclick = function()
+{
+    let costo = Number(document.getElementById("costo").value);
+    let propinaPorcentaje = Number(document.getElementById("propina").value);
 
-document.getElementById("calc").onclick = function(){
-    numeroA = Number(document.getElementById("costo").value);
-    numeroB = Number(document.getElementById("propina").value);
-    total = numeroA+((numeroA * numeroB)/100);
-    document.getElementById("precio").innerHTML = `Precio: ${numeroA}`
-    document.getElementById("total").innerHTML = `Precio total: ${total}`
+    let propina = propinaPorcentaje/100*costo;
+    let total = costo + propina;
+
 }
