@@ -42,3 +42,14 @@
     outline:none;
     background: #fae1d7;	
    }
+
+footer{
+    background-color: rgb(255, 85, 0);
+    color: #ffbc01;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
