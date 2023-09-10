@@ -12,6 +12,17 @@
         <div class="contenedor">
             <div class="calculadora">
                 <h1>Calculadora de propina</h1>
+                <!-- <div class="range"> //barra
+
+    <div class="sliderValue">
+        <span>1000</span>
+    </div>
+    <div class="field">
+        <div class="value left">0</div> //numerico de la izq
+        <input type="range" min="0" max="2000" value="1000" steps="1"> //minimo maximo y escalado
+        <div class="value right">2000</div> 
+    </div>
+</div> -->
                 <div class="obj">
                     <p>Costo comida:</p>
                     <input id="costo">
@@ -30,8 +41,27 @@
             <!-- <img src="./img/comida.jpg"> -->
         </div>
 
+        
+        <footer>
+            Carrasco Candela - Nieto Leandro - Cupare Ramiro - Raskovsky Valentin - Pioli Andrea - Grupo 11 &copy; 2023
+        </footer>
+        
+
     </div>
-    
+
+    <!-- //incrementacion de la barra
+ <script>
+ const sliderValue = document.querySelector("span")
+ const inputSlider = document.querySelector("input")
+ inputSlider.oninput =(()=>{
+    let value = inputSlider.value;
+    sliderValue.textContent = value;
+    sliderValue.style.left = (value/2) + "%";
+    sliderValue.classList.add ("show");
+ });
+ inputSlider.onblur = (()=>{
+    sliderValue.classList.remove("show");
+ });</script> -->
     <script src="../src/index.js"></script>
 </body>
 </html>
