@@ -1,3 +1,9 @@
+document.getElementById("rangePropina").onchange = function()
+{
+    let propina = Number(document.getElementById("rangePropina").value);
+    document.getElementById("valorPropina").innerHTML = `${propina}%`;
+}
+
 document.getElementById("calc").onclick = function()
 {
     let numeroA = Number(document.getElementById("costo").value);
@@ -13,4 +19,3 @@ document.getElementById("calc").onclick = function()
     document.getElementById("precioTotal").innerHTML = `Precio total: $ ${total}`;
 
 }
-
