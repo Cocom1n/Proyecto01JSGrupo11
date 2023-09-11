@@ -7,7 +7,7 @@ document.getElementById("rangePropina").onchange = function()
 document.getElementById("calc").onclick = function()
 {
     let numeroA = Number(document.getElementById("costo").value);
-    let numeroB = Number(document.getElementById("propina").value);
+    let numeroB = Number(document.getElementById("rangePropina").value);
 
     let calculo = numeroB/100*numeroA;
     let total = numeroA + calculo;
