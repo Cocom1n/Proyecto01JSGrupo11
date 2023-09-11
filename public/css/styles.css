@@ -1,0 +1,72 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{font-size: 3em;}
+    p{font-size: 2.5em;}
+    button{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 9px 18px;
+        border-radius: 10px;
+        border: 2px solid #dd3e0de7;
+        color: white;
+        background-color: rgba(252, 111, 29, 0.973);
+    }
+
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+.caja{
+    display: flex;
+}
+
+.contenedor{
+    background-color: #ffbc01;
+    height: 100vh;
+    width: 100%;
+    /* margin: auto; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    background-image: url(../img/comida.jpg);
+    /* background-size: cover; */
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.obj{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+
+.obj input{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+.obj input:focus{ 
+    /* border:none;	 */
+    outline:none;
+    background: #fae1d7;	
+   }
+
+footer{
+    background-color: rgb(255, 85, 0);
+    color: #ffbc01;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
